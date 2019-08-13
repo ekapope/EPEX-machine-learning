@@ -5,10 +5,11 @@ Define a strategy to trade between day ahead and intraday electricity markets wi
 - Business understanding
     - Address business problem(s)
     - Potential trading strategy
-- Data gathering
+- Data gathering and preparation
     - EPEX spot market data for France and Germany: R - web scraping [emarketcrawlR package](https://github.com/wagnertimo/emarketcrawlR)
     - Historical weather forecast: Python, API wrapper [wwo-hist](https://github.com/ekapope/WorldWeatherOnline)
     - French public holidays
+    - Feature extraction and feature engineering
 - Methodology
     - Experimental setup
     - Target variable definition and machine learning models
@@ -39,15 +40,9 @@ Although, this project is mainly focused in France, we only choose data that is 
 2.	Day-ahead forecasts of the grid load and generation capacity in France. Like in other European markets, these forecasts are available before the bid deadline on the website of the transmission system operators (TSOs): ENTSO-E data for France.  However, this was later excluded for this project due to data quality issue.
 
 3.	Weather data (WorldWeatherOnline data)
-
-    3.1.	Historical weather data could also be an important factor for the forecasting, for our research, we have decided to include them for wind and solar farm regions. From the research, 18% of overall production are from renewable energy.
-
-    3.2.	Main Solar farm regions, weather data from Poitiers, Bordeaux, Marseille, Lyon, Montpellier.
-
-    3.3.	Main Wind farm regions, weather data from; Lille, Remis, Dijon.
+Historical weather data could also be an important factor for the forecasting, for our research, we have decided to include them for wind and solar farm regions since 18% of overall production are from renewable energy.
 
 4.	Calendar of public holidays in France in the defined time range. Public holidays influence in a significant way the economic and domestic activity and consequently the consumption of electricity. Therefore, we take them into account for the forecast.
-
 
 
 ## Experimental Setup
