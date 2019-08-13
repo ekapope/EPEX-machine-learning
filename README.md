@@ -3,7 +3,7 @@ Define a strategy to trade between day ahead and intraday electricity markets wi
 
 ## Project Background and Market Structure
 
-Electricity price forecasting (EPF) is a branch of energy forecasting which focuses on predicting the spot and forward prices in wholesale electricity markets. Over the years electricity price forecasts have become a fundamental input to energy companies' decision-making mechanisms at the corporate level.
+Electricity price forecasting is a branch of energy forecasting which focuses on predicting the spot and forward prices in wholesale electricity markets. Over the years electricity price forecasts have become a fundamental input to energy companies' decision-making mechanisms at the corporate level.
 
 In this project, we aim to forecast the prices of only the day ahead and the intraday market of France electricity market. The aim would also be to compare the prices on same days and hours in the intraday and day ahead market.
 
@@ -15,7 +15,7 @@ The price building mechanism for hourly products at the day-ahead market is cond
 
 The intraday market for hourly contracts at EPEX Spot is organized as a continuous trading market. Each contract can be bought and sold throughout until 30 minutes before delivery. Hence, traders are more flexible regarding trading time compared to the day-ahead auction. Like the bidding mechanism at the day-ahead market, players submit buy or sell orders for a certain contract with information about volume and price to EPEX Spot. 
  
-## Data Selection and Motivation (Data Overview)
+## Data Selection and Motivation
 
 Although, this project is mainly focused in France, we only choose data that is freely available so that the proposed models can be applied to other EU markets. In particular, we select the period from 01/01/2014 to 31/12/2018 as the time range of study, and we consider the following data:
 
