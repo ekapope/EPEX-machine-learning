@@ -1,6 +1,21 @@
 # Machine Learning Approaches for Electricity Markets Trading (EPEX spot)
 Define a strategy to trade between day ahead and intraday electricity markets with the help of machine learning models. The project was initiated in collaboration with Delaware Consulting and IÉSEG School of Management. The final business presentation can be found [here](https://github.com/ekapope/EPEX-machine-learning/blob/master/EPEX_Hackathon_Business_Presentation.pdf).
 
+## Project Workflow Summary
+- Business understanding
+    - Address business problem(s)
+    - Potential trading strategy
+- Data gathering
+    - EPEX spot market data for France and Germany: R - web scraping [emarketcrawlR package](https://github.com/wagnertimo/emarketcrawlR)
+    - Historical weather forecast: Python, API wrapper [wwo-hist](https://github.com/ekapope/WorldWeatherOnline)
+    - French public holidays
+- Methodology
+    - Experimental setup
+    - Target variable definition and machine learning models
+    - Insights and business application
+
+---------------
+
 ## Project Background and Market Structure
 
 Electricity price forecasting is a branch of energy forecasting which focuses on predicting the spot and forward prices in wholesale electricity markets. Over the years electricity price forecasts have become a fundamental input to energy companies' decision-making mechanisms at the corporate level.
