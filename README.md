@@ -1,5 +1,5 @@
 # Machine Learning Approaches for Electricity Markets Trading (EPEX spot)
-Define a strategy to trade between day ahead and intraday electricity markets with the help of machine learning models. The project was initiated in collaboration with Delaware Consulting and IÉSEG School of Management. The final business presentation can be found [here](https://github.com/ekapope/EPEX-machine-learning/blob/master/EPEX_Hackathon_Business_Presentation.pdf).
+Developed a strategy to trade between day ahead and intraday electricity markets with the help of machine learning models. The project was initiated in collaboration with Delaware Consulting and IÉSEG School of Management. The final business presentation can be found [here](https://github.com/ekapope/EPEX-machine-learning/blob/master/EPEX_Hackathon_Business_Presentation.pdf).
 
 ## Project Workflow Summary
 - Business understanding
