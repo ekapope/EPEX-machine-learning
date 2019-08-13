@@ -1,15 +1,17 @@
 # Machine Learning Approaches for Electricity Markets Trading (EPEX spot)
-Define a strategy to trade between day ahead and intraday electricity markets with the help of machine learning models.
+Define a strategy to trade between day ahead and intraday electricity markets with the help of machine learning models. The project was initiated in collaboration with Delaware Consulting and IÉSEG School of Management. The final business presentation can be found [here](https://github.com/ekapope/EPEX-machine-learning/blob/master/EPEX_Hackathon_Business_Presentation.pdf).
 
 ## Project Background and Market Structure
 
 Electricity price forecasting (EPF) is a branch of energy forecasting which focuses on predicting the spot and forward prices in wholesale electricity markets. Over the years electricity price forecasts have become a fundamental input to energy companies' decision-making mechanisms at the corporate level.
 
 In this project, we aim to forecast the prices of only the day ahead and the intraday market of France electricity market. The aim would also be to compare the prices on same days and hours in the intraday and day ahead market.
-Day-Ahead Market
+
+#### Day-Ahead Market
 
 The price building mechanism for hourly products at the day-ahead market is conducted through an auction. Participating agents submit supply and demand bids containing information about quantity, price and delivery period on the following day to EPEX Spot. Bids can be submitted to EPEX Spot until the auction takes place at 12:00 a.m. every day, including weekend and public holidays. 
-Intraday Market
+
+#### Intraday Market
 
 The intraday market for hourly contracts at EPEX Spot is organized as a continuous trading market. Each contract can be bought and sold throughout until 30 minutes before delivery. Hence, traders are more flexible regarding trading time compared to the day-ahead auction. Like the bidding mechanism at the day-ahead market, players submit buy or sell orders for a certain contract with information about volume and price to EPEX Spot. 
  
@@ -19,7 +21,7 @@ Although, this project is mainly focused in France, we only choose data that is 
 
 1.	Day-ahead and intraday prices from the EPEX-France and Germany power exchanges.  
 
-2.	Day-ahead forecasts of the grid load and generation capacity in France. Like in other European markets, these forecasts are available before the bid deadline on the website of the transmission system operators (TSOs): ENTSO-E data for France.  This was later not used for this project.
+2.	Day-ahead forecasts of the grid load and generation capacity in France. Like in other European markets, these forecasts are available before the bid deadline on the website of the transmission system operators (TSOs): ENTSO-E data for France.  However, this was later excluded for this project due to data quality issue.
 
 3.	Weather data (WorldWeatherOnline data)
 
@@ -104,9 +106,18 @@ Since the profit/loss for each predicted class is not equal, the false negative 
 
 |Actual|Predicted|Type|Action|
 | ------------- | ------------- | ------------- | ------------- |
- |1	|0	|False negative|	No action (opportunity loss) |
- |1	|1	|True positive	|Take action |
- |0	|1	|False positive|	Take action |
- |0	|0	|True negative|	No action |
+|1	|0	|False negative|No action (opportunity loss) |
+|1	|1	|True positive|Take action |
+|0	|1	|False positive|Take action |
+|0	|0	|True negative|	No action |
 
+### References
 
+Stoiber, J. (2017). The behavior of electricity prices at the German intraday market: A probabilistic functional data approach. 
+
+Lago, J., De Ridder, F., Vrancx, P. and De Schutter, B. (2018). Forecasting day-ahead electricity prices in Europe: The importance of considering market integration.
+
+Mccarthy, K., Zabar, B., & Weiss, G. (2005). Cost-Sensitive Learning vs. Sampling: Which is Best for
+Handling Unbalanced Classes with Unequal Error Costs? Department of Computer and Information Science, Fordham University. Bronx, NY, USA.
+
+Chawla, N., Bowyer, K., Hall, L. and Kegelmeyer, W. (2002). SMOTE: Synthetic Minority Over-sampling Technique. Journal of Artificial Intelligence Research, 16, pp.321-357
